@@ -1,5 +1,5 @@
-var name = 'wh';
-
+// var name = 'wh';
+var age = 18
 foo(123)
 
 function foo(num) {
@@ -8,6 +8,8 @@ function foo(num) {
   var n = 20;
   function bar() {
     console.log(name)
+    console.log(age)
+
   }
   bar()
 }
