@@ -5,6 +5,8 @@ function foo() {
   return
   var a = 200
 }
-// 扫描函数定义时候，不管是不是在return后面
 
 foo()
+
+// 扫描函数定义时候，不管是不是在return后面
+// undefined

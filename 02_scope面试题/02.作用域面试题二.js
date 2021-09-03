@@ -6,3 +6,5 @@ function foo() {
 var n = 100
 foo()
 
+// undefined
+// 200
