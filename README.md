@@ -6,5 +6,5 @@
 ### 02 finished
 ### 03 finished
 ### 04 finished
-### 05 ing
+### 05 ing  30 min
 
