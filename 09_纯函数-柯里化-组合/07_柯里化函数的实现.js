@@ -24,5 +24,5 @@ function add(x,y,z,h) {
 
 
 var r = whCurrying(add)
-var rr = r(1,5)(1,2)
+var rr = r(1,5,10,2)
 console.log(rr)
