@@ -17,6 +17,10 @@ function Student(name, age, number, friends) {
 
 var p = new Person()
 
+// 还是要把父类指定一下，不然 __proto__ 指向 Object
+// 这样就可以拥有 p.__proto__ 指向的 Person.prototype 的方法了
+//  stu.__proto__ 指向 Student.prototype 即 p
+// 沿着原型链就可以找到了
 Student.prototype = p
 
 var stu = new Student('wh', 18, 100, ['a', 'c'])
