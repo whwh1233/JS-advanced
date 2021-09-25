@@ -1,11 +1,8 @@
 .DS_Store
 .history/
 node_modules/
-build/
 unpackage/
 dist/
-
-# **/node_modules
 
 # local env files
 .env.local
