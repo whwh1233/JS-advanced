@@ -52,7 +52,10 @@
 ### 24 finished
 ### 25 finished
 ### 26 finished
-### 27 ing
+### 27 finished
+### 28 finished
+### 29 finished
+
 
 
 ### 面试记录
