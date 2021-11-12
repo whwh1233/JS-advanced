@@ -4,7 +4,7 @@ setTimeout(() => {
 
 // 宏任务队列：定时器，ajax, DOM ,UI Rendering
 
-// 微任务队列：queueMicrotask , Promise then，Mutation Observe API
+// 微任务队列：queueMicrotask , Promise then，Mutation Observer API
 
 // 规范：在执行任何宏任务之前，都需要保证微任务队列已经被清空了
 queueMicrotask(() => {

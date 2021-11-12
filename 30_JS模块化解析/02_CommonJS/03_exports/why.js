@@ -8,5 +8,5 @@ exports.name = name
 // module.exports = {}
 // exports = module.exports
 
-// 不能这么导出
+// 不能这么导出  这样更改了exports的指向
 // exports = {}

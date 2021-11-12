@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 当做普通的JS来解析，所以不能使用import -->
+  <!-- 需要加上 type="module"-->
+  <!-- 还得使用 live server ,开启本地服务器，有自己的地址与端口号，相当于访问本地服务器，通过http服务去请求js文件，而不是 file协议-->
+  <!-- 如果是本地打开index.html资源，就会产生跨源错误 -->
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
