@@ -45,6 +45,16 @@
 ### 20 finished
 
 ### 21 finished
+### 22 finished
+### 23 finished
+### 24 finished
+### 25 finished
+### 26 finished
+### 27 finished
+### 28 finished
+### 29 finished
+
+
 
 ### 面试记录
 
@@ -63,4 +73,3 @@
 13. 算法题，时间复杂度分析，怎么优化
 14.
 15.
-16.
