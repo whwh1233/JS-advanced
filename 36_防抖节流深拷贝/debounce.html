@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text">
+  <button class="btn">取消</button>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script> -->
+<!-- <script src="./01_debounce-v1基本实现.js"></script> -->
+<!-- <script src="./03_debounce-v3-立即执行.js"></script> -->
+<!-- <script src="./04_debounce-v4-取消功能.js"></script> -->
+<script src="./05_debounce-v5-函数返回值2.js"></script>
+<script>
+  const inputEl = document.querySelector('input')
+  let count = 0;
+  const inputChange = function(event) {
+    console.log(`发送了${count++}次网络请求`,this,event);
+    return 'aaa'
+  }
+  // 不处理
+  // inputEl.oninput = inputChange
+  // 防抖处理
+
+  // 传递回调函数处理函数返回值
+  const debounceChange = debounce(inputChange,3000,false,res => console.log(res))
+
+  const tempCallback = () => {
+    debounceChange().then(res => {
+      console.log('外部的Promise的返回结果',res);
+    })
+  }
+
+  inputEl.oninput = tempCallback
+
+
+  const btn = document.querySelector('.btn')
+  btn.onclick = function() {
+    debounceChange.cancel()
+  }
+  // 节流处理
+  // inputEl.oninput = _.throttle(inputChange,2000)
+</script>
+</html>
