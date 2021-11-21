@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: yellow;
+    }
+    .parent {
+      width: 400px;
+      height: 400px;
+      background-color: red;
+    }
+    .child {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- <div class="parent" onclick="console.log('第一种监听方法;')">parent -->
+    <div class="parent" onclick="divClick()">parent
+      <div class="child">child</div>
+    </div>
+    <h2>hah</h2>
+    <!-- <script src="./01_验证DOM都继承自EventTarget.js"></script> -->
+    <!-- <script src="./02_验证DOM都有接口Node.js"></script> -->
+    <!-- <script src="./03_Document的常见属性和方法.js"></script> -->
+    <!-- <script src="./04_Element的常见属性和方法.js"></script> -->
+
+    <script src="./05_常见的事件监听方式.js"></script>
+  </div>
+</body>
+</html>
