@@ -4,14 +4,14 @@ Function.prototype.whcall = function(thisArg, ...args) {
   console.log('whcall 被调用')
   // 需要在这里执行调用我的函数
   // 需要获取一下是哪个函数执行了whcall
-  // 1. 获取调用我的函数
+  // 1. 获取调用我的函数,需要执行的函数
   var fn = this
   // 防止thisAgr传入的是非对象类型
-  thisArg =   thisArg?Object(thisArg):window  
+  thisArg =   thisArg?Object(thisArg):window
   // 2. 执行调用我的函数
   thisArg.fn = fn
   console.log(...args)
-  var r  = thisArg.fn(...args)    
+  var r  = thisArg.fn(...args)
   return r
 }
 
